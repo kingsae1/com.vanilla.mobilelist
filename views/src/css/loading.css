@@ -1,0 +1,67 @@
+/*로딩 https://loading.io/css/*/
+
+#loadingWrap{
+  display: table;
+}
+
+.loadingBar{
+  display: none;
+}
+
+.loadingBar.on{
+  display: table-cell;
+  position: fixed;
+  width: 60px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.loadingBar.on div {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: red;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.loadingBar.on div:nth-child(1) {
+  left: 6px;
+  animation: loadingBar1 0.6s infinite;
+}
+.loadingBar.on div:nth-child(2) {
+  left: 6px;
+  animation: loadingBar2 0.6s infinite;
+}
+.loadingBar.on div:nth-child(3) {
+  left: 26px;
+  animation: loadingBar2 0.6s infinite;
+}
+.loadingBar.on div:nth-child(4) {
+  left: 45px;
+  animation: loadingBar3 0.6s infinite;
+}
+@keyframes loadingBar1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loadingBar3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes loadingBar2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
