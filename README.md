@@ -1,8 +1,8 @@
 # com.vanilla.mobileList
 
-#### 모바일웹에서 제공되는 간단한 목록 만들기
+## 모바일웹에서 제공되는 간단한 목록 만들기
 
-1. 제공된 API를 사용해서 모바일웹에서 조회 가능한 목록을 만드는 어플
+#### 1. 제공된 API를 사용해서 모바일웹에서 조회 가능한 목록을 만드는 어플
     * API Response 로 주어지는 JSON 내용 중 result 항목의 배열을 모바일웹의 목록
     * 목록의 각 항목은 id, key, uuid, created 값 포함
     * created 항목은 사용자가 인지하기 쉬운 형태로 포맷팅 
@@ -15,7 +15,7 @@
     * ./views/user.html 에 javascript, html 등 구현 코드를 자유롭게 개발
     * 풀이과정, 구현의도, 실행방법 등에 대한 설명을 `RESULT.md` 에 기술
     
-2. users API Server 실행 방법
+#### 2. users API Server 실행 방법
     * npm install  을 통해 dependency module 을 설치
     * npm start or node ./bin/www 명령어로 express app 을 실행
     * npm test 로 test code 를 실행
