@@ -1,4 +1,4 @@
-# com.vanilla.mobileList
+# com.mobileList.vanilla
 
 ## 모바일웹에서 제공되는 간단한 목록 만들기
 
